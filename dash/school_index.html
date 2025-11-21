@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-MNG</title>
+    <!--Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="school_index.css">
+		<!--Google font icons-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+  <div class="top-level-box">
+		<!--Side bar menu-->
+    <aside>
+			<div class="top">
+				<div class="logo">
+					<img src="images/logo.png" alt="INC-LOGO">
+					<h2><span class="logop1">Cbe</span><span class="logop2">Sync</span> </h2>
+				</div>
+				<div class="close" id="close-btn">
+					<span class="material-symbols-outlined">cancel_presentation</span>
+				</div>
+			</div>
+			<div class="sidebar">
+				<a href="#" class="active">
+					<span class="material-symbols-outlined">dashboard</span>
+					<h3>Dashboard</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">groups_3</span>
+					<h3>User-Management</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">cast_for_education</span>
+					<h3>Class-Management</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">monitoring</span>
+					<h3>Assessment and Reporting</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">admin_panel_settings</span>
+					<h3>Administrative Tools</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">communication</span>
+					<h3>Communication</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">books_movies_and_music</span>
+					<h3>Library</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">report</span>
+					<h3>Reports</h3>
+					<span class="report-count">10</span>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">table_chart_view</span>
+					<h3>Analytics</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">settings</span>
+					<h3>settings</h3>
+				</a>
+				<a href="#">
+					<span class="material-symbols-outlined">logout</span>
+					<h3>logout</h3>
+				</a>
+			</div>
+    </aside> 
+		<!--main body-->
+		<main>
+			<h1>Dashboard</h1>
+			<div class="date">
+				<input type="date" name="date-top">
+			</div>
+			<div class="insights">
+				<!--Students census-->
+				<div class="census-std">
+					<span class="material-symbols-outlined">person_4</span>
+					<div class="middle">
+						<div class="left">
+							<h3>Students</h3>
+							<h1>2,000</h1>
+						</div>
+						<div class="progress">
+							<svg>
+								<circle cx="38" cy="38" r="36"></circle>
+							</svg>
+							<div class="number">
+								<p>81%</p>
+							</div>
+						</div>
+					</div>
+					<small class="text-muted">Last 24hrs</small>
+				</div>
+				<!--Teachers census-->
+				<div class="census-tch">
+					<span class="material-symbols-outlined">person_4</span>
+					<div class="middle">
+						<div class="left">
+							<h3>Teachers</h3>
+							<h1>2,000</h1>
+						</div>
+						<div class="progress">
+							<svg>
+								<circle cx="38" cy="38" r="36"></circle>
+							</svg>
+							<div class="number">
+								<p>61%</p>
+							</div>
+						</div>
+					</div>
+					<small class="text-muted">Last 24hrs</small>
+				</div>
+				<!--Staff census-->
+				<div class="census-nts">
+					<span class="material-symbols-outlined">person_4</span>
+					<div class="middle">
+						<div class="left">
+							<h3>NT-Staff</h3>
+							<h1>2,000</h1>
+						</div>
+						<div class="progress">
+							<svg>
+								<circle cx="38" cy="38" r="36"></circle>
+							</svg>
+							<div class="number">
+								<p>41%</p>
+							</div>
+						</div>
+					</div>
+					<small class="text-muted">Last 24hrs</small>
+				</div>
+			</div>
+			<!--Recent activities table-->
+			<div class="recent-activities">
+				<h2>Recent activities</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Activity Name</th>
+							<th>Activity ID</th>
+							<th>Supervisor</th>
+							<th>Status</th>
+							<th>Data</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Parents Meeting</td>
+							<td>P5O7YW9RWX</td>
+							<td>Mr. Mohammed</td>
+							<td class="warning">Pending</td>
+							<td class="primary">Details</td>
+						</tr>
+						<tr>
+							<td>Parents Meeting</td>
+							<td>P5O7YW9RWX</td>
+							<td>Mr. Mohammed</td>
+							<td class="warning">Pending</td>
+							<td class="primary">Details</td>
+						</tr>
+						<tr>
+							<td>Parents Meeting</td>
+							<td>P5O7YW9RWX</td>
+							<td>Mr. Mohammed</td>
+							<td class="warning">Pending</td>
+							<td class="primary">Details</td>
+						</tr>
+						<tr>
+							<td>Parents Meeting</td>
+							<td>P5O7YW9RWX</td>
+							<td>Mr. Mohammed</td>
+							<td class="warning">Pending</td>
+							<td class="primary">Details</td>
+						</tr>
+						<tr>
+							<td>Parents Meeting</td>
+							<td>P5O7YW9RWX</td>
+							<td>Mr. Mohammed</td>
+							<td class="warning">Pending</td>
+							<td class="primary">Details</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#">show all</a>
+			</div>
+		</main>
+  </div>
+
+  <script src="school_index.js"></script>
+</body>
+</html>
