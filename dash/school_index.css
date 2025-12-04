@@ -120,6 +120,7 @@ b{
 }
 aside{
     height: 100vh;
+    position: relative;
 }
 aside .top{
     display: flex;
@@ -209,15 +210,16 @@ aside .sidebar .report-count{
 main{
     margin-top: 1.5rem;
 }
-main .date{
+main .school-data{
     margin-top: 1rem ;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
     padding: 0.5rem 1.5rem;
-    background-color: var(--color-light);
+    background-color: var(--color-white);
     border-radius: var(--border-radius-1);
+    font-weight: bold;
 }
-main .date input[type="date"]{
-    background: transparent;
+main .school-data .school-rez{
     color: var(--color-dark);
 }
 main .insights{
@@ -437,6 +439,9 @@ main .recent-activities a{
 }
 /*Media Queries*/
 @media screen and (max-width:1200px) {
+    main .school-data{
+        grid-template-columns: 1fr;
+    }
     .top-level-box{
         width: 94%;
         grid-template-columns: 7rem auto 23rem;
