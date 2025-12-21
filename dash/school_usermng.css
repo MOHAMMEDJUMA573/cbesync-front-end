@@ -367,9 +367,6 @@ main h1{
 }
 /*Media Queries*/
 @media screen and (max-width:1200px) {
-    main .school-data{
-        grid-template-columns: 1fr;
-    }
     .top-level-box{
         width: 94%;
         grid-template-columns: 7rem auto;
