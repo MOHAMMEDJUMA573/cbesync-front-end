@@ -50,19 +50,19 @@ function drawCircle(ctx, method) {
         case 1: {
             ctx.strokeStyle = 'green';
             ctx.lineWidth = 8;
-            ctx.arc(0, 0, rad, 0, Math.PI * 1);
+            ctx.arc(0, 0, rad, 0, Math.PI * ((1/3)*2));
             break;
         }
         case 2: {
             ctx.strokeStyle = 'green';
             ctx.lineWidth = 8;
-            ctx.arc(0, 0, rad, 0, Math.PI * 0.52);
+            ctx.arc(0, 0, rad, 0, Math.PI * ((1/3)*2));
             break;
         }
         case 3: {
             ctx.strokeStyle = 'green';
             ctx.lineWidth = 8;
-            ctx.arc(0, 0, rad, 0, Math.PI * 0.5);
+            ctx.arc(0, 0, rad, 0, Math.PI * ((1/3)*2));
             break;
         }
     }
