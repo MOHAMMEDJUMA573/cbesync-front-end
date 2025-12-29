@@ -56,9 +56,6 @@ main h1{
     }
 }
 @media screen and (max-width:795px) {
-    .main-grid{
-        margin-top: auto;
-    }
     .subgrid1{
         grid-template-columns: 1fr;
     }
