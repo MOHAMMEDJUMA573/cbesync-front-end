@@ -2,6 +2,7 @@ const sideMenu = document.querySelector("aside");
 const menuButton = document.querySelector("#menu-btn");
 const closeButton = document.querySelector("#close-btn");
 const themeButton = document.querySelector(".theme-toggle-btn");
+
 /*Menu show*/
 menuButton.addEventListener('click', ()=> {
     sideMenu.style.display = 'block';

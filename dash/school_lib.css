@@ -76,9 +76,6 @@ main h1{
     }
 }
 @media screen and (max-width:795px) {
-    main{
-        margin-top: 3.5rem;
-    }
     .main-grid-part{
         grid-template-columns: 1fr;
     }
