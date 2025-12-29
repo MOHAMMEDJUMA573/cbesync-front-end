@@ -149,33 +149,8 @@ main h1{
 }
 /*Media Queries*/
 @media screen and (max-width:1200px) {
-    .top-level-box{
-        width: 94%;
-        grid-template-columns: 7rem auto;
-    }
-    aside .logo h2{
-        display: none;
-    }
-    aside .sidebar h3{
-        display: none;
-    }
-    aside .sidebar a{
-        width: 5.5rem;
-    }
-    aside .sidebar a:last-child{
-        position: relative;
-        margin-top: 2rem;
-    }
-    .recent-updates{
-        display: none;
-    }
-    .school-analytics{
-        display: none;
-    }
-    .top2{
-        position: absolute;
-        top: 1.5rem;
-        right: 0;
+    .main-grid{
+        margin-top: 3rem;
     }
     .grid-part{
         grid-template-columns: repeat(2, 1fr);

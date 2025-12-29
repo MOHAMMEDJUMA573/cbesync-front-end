@@ -110,23 +110,7 @@ main .recent-activities a{
 @media screen and (max-width:1200px) {
     main .school-data{
         grid-template-columns: 1fr;
-    }
-    .top-level-box{
-        width: 94%;
-        grid-template-columns: 7rem auto 23rem;
-    }
-    aside .logo h2{
-        display: none;
-    }
-    aside .sidebar h3{
-        display: none;
-    }
-    aside .sidebar a{
-        width: 5.5rem;
-    }
-    aside .sidebar a:last-child{
-        position: absolute;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     main .insights{
         grid-template-columns: 1fr;
@@ -150,38 +134,7 @@ main .recent-activities a{
     main table tbody tr td:first-child{
         display: none;
     } 
-    /*Tablet fixed menu*/
-    .aside-right .top{
-        position: fixed;
-        top: 1.5rem;
-        margin-bottom: 1rem;
-        right: 1rem;
-        background: var(--color-background);
-        border-radius: var(--border-radius-1);
-        padding: var(2rem);
-    }
-    .aside-right .recent-updates{
-        margin-top: 3rem;
-    }
-    .main-header{
-        position: fixed;
-        top: 1.5rem;
-        background: var(--color-background);
-        padding: 0.2rem;
-        border-radius: 0.2rem;
-    }
-    main .school-data{
-        margin-top: 3rem;
-    }
-    main{
-        margin-left: 8rem;
-    }
-    aside{
-        position: fixed;
-    }
-    .top-level-box{
-        grid-template-columns: auto 23rem;
-    }
+    
 }
 @media screen and (max-width:768px) {
     .top-level-box{
