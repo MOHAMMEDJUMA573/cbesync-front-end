@@ -81,11 +81,11 @@ button{
     border: 1px solid black;
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 .maing-tpp-label{
     font-size: 1rem;
     cursor: pointer;
-    margin-right: 1rem;
 }
 .maing-data-grid{
     display: flex;
