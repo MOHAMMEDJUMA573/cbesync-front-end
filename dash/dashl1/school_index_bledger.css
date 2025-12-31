@@ -155,8 +155,52 @@ button{
 }
 @media screen and (max-width:795px) {
     main{
-        margin-top: 7rem;
-        padding: 0 1rem;
+        margin-left: 0;
+        padding: 1rem;
     }
+    .aside-right .top{
+        top: 0;
+    }
+    .maing-top-utils{
+        grid-template-columns: 1fr;
+    }
+    .maing-topu-p:nth-child(2){
+        display: none;
+    }
+    .maing-topu-p:nth-child(3){
+        display: none;
+    }
+    .maing-topu-p:nth-child(4){
+        display: none;
+    }
+    .maing-topu-p .sButton{
+        display: none;
+    }
+    .maingt-header-row .maingth-data:nth-child(4){
+        display: none;
+    }
+    .maingt-header-row .maingth-data:nth-child(5){
+        display: none;
+    }
+    .maingt-header-row .maingth-data:nth-child(6){
+        display: none;
+    }
+    .maingt-data-row .maingtr-data:nth-child(4) {
+        display: none;
+    }
+    .maingt-data-row .maingtr-data:nth-child(5) {
+        display: none;
+    }
+    .maingt-data-row .maingtr-data:nth-child(6) {
+        display: none;
+    }
+    .maingt-header-row{
+        grid-template-columns: 1.5fr 2.5fr;
+        margin-bottom: 0.5rem;
+    }
+    .maingt-data-row{
+        grid-template-columns: 1.5fr 2.5fr;
+    }
+    
     
 }
