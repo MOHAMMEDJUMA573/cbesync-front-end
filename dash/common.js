@@ -18,7 +18,6 @@ function T1(){
     themeButton.querySelector('span:nth-child(1)').classList.toggle('active');
     themeButton.querySelector('span:nth-child(2)').classList.toggle('active');
 }
-T1();
 /*theme changer*/
 themeButton.addEventListener('click', ()=> {
     T1();

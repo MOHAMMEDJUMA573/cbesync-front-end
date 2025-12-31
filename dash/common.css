@@ -2,18 +2,21 @@
 @import url( 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap' );
 /* root variables */
 :root {
+    /*theme 2*/
+    --color-background: black;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0,0,0,0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);    
+
     --color-primary: #008000;
     --color-danger: #fe4a59;
     --color-success: #ffa500;
     --color-warning: #ff0505;
-    --color-white: #fff;
     --color-info-dark: #7d8da1;
     --color-info-light: #dce1eb;
-    --color-dark: #363949;
-    --color-light: rgba(132, 139, 200, 0.18);
     --color-primary-variant: #1f963b;
-    --color-dark-variant: #677483;
-    --color-background: #f6f9f8;
     --color-cbesync-p1: #8f8f00;
 
     --card-border-radius: 2rem;
@@ -22,15 +25,15 @@
     --border-radius-3: 1.2rem;
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
-    --box-shadow: 0 2rem 3rem var(--color-light);
 }
 /*Dark theme variables*/
 .dark-theme-variables{
-    --color-background: black;
-    --color-white: #202528;
-    --color-dark: #edeffd;
-    --color-dark-variant: #a3bdcc;
-    --color-light: rgba(0,0,0,0.4);
+    /*theme 1 colors*/
+    --color-background: #f6f9f8;
+    --color-white: #fff;
+    --color-dark: #363949;
+    --color-dark-variant: #677483;
+    --color-light: rgba(132, 139, 200, 0.18);
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 *{
