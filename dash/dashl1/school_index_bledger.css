@@ -22,7 +22,7 @@ aside{
     position: fixed;
 }
 .top-level-box{
-    width: 94%;
+    width: 97%;
     grid-template-columns: 1fr;
 }
 /*Page title*/
