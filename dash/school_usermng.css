@@ -1,4 +1,53 @@
-
+/*custom page for table fit*/
+/*Top left profile*/
+.aside-right .top{
+    position: fixed;
+    top: 1.5rem;
+    margin-bottom: 1rem;
+    right: 1rem;
+    background: var(--color-background);
+    border-radius: var(--border-radius-1);
+    padding: var(2rem);
+}
+/*below top*/
+.aside-right .recent-updates{
+    margin-top: 3rem;
+}
+aside .sidebar a:last-child{
+    position: absolute;
+    margin-top: 2rem;
+    width: auto;
+}
+aside{
+    position: fixed;
+}
+.top-level-box{
+    width: 97%;
+    grid-template-columns: 1fr;
+}
+/*Page title*/
+.main-header{
+    position: fixed;
+    top: 1.5rem;
+    background: var(--color-background);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+/*hide analytics and recent*/
+.recent-updates{
+    display: none;
+}
+.school-analytics{
+    display: none;
+}
+/*main part*/
+main{
+    margin-top: 1.5rem;
+    margin-left: 14rem;
+}
+main h1{
+    margin-bottom: 2rem;
+}
 /*main part*/
 main{
     margin-top: 1.5rem;
@@ -9,9 +58,10 @@ main h1{
 .main-grid{
     display: flex;
     flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 1rem;
 }
 .grid-fieldset{
-    border: 1px solid var(--color-success);
     border-radius: var(--card-border-radius);
     margin-bottom: 1rem;
 }
@@ -149,6 +199,9 @@ main h1{
 }
 /*Media Queries*/
 @media screen and (max-width:1200px) {
+    main{
+        margin-left: 8rem;
+    }
     .main-grid{
         margin-top: 3rem;
     }
@@ -157,6 +210,10 @@ main h1{
     }
 }
 @media screen and (max-width:768px) {
+    main{
+        margin-left: 0;
+        margin-top: 3rem;
+    }
     .aside-right .top button{
         display: inline-block;
     }
