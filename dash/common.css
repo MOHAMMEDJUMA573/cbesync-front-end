@@ -132,11 +132,11 @@ b{
     width: 97%;
     margin: 0 auto;
     gap: 1.8rem;
-    grid-template-columns: 14rem auto 23rem;
+    grid-template-columns: 3fr 1fr;
 }
 aside{
     height: 100vh;
-    position: relative;
+    position: fixed;
 }
 aside .top{
     display: flex;
@@ -195,8 +195,9 @@ aside .sidebar a span{
 }
 aside .sidebar a:last-child{
     position: absolute;
+    margin-top: 2rem;
+    width: auto;
     bottom: 2rem;
-    width: 100%;
 }
 aside .sidebar a.active{
     background-color: var(--color-light);
@@ -227,7 +228,27 @@ aside .sidebar .report-count{
     font-size: 0.7rem;
     border-radius: var(--border-radius-1);
 }
-
+/**/
+main{
+    margin-top: 1.5rem;
+    margin-left: 14rem;
+}
+main h1{
+    margin-bottom: 2rem;
+}
+.main-header{
+    position: fixed;
+    top: 1.5rem;
+    background: var(--color-background);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+.main-grid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
 /*Right section*/
 .aside-right{
     margin-top: 1.5rem;
@@ -237,6 +258,13 @@ aside .sidebar .report-count{
     display: flex;
     justify-content: end;
     gap: 2rem;
+    position: fixed;
+    top: 1.5rem;
+    margin-bottom: 1rem;
+    right: 1rem;
+    background: var(--color-background);
+    border-radius: var(--border-radius-1);
+    padding: var(2rem);
 }
 
 .aside-right .top button{
@@ -273,7 +301,7 @@ aside .sidebar .report-count{
     text-align: left;
 }
 .aside-right .recent-updates {
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 .aside-right .recent-updates h2{
     margin-bottom: 0.8rem;
@@ -331,6 +359,10 @@ aside .sidebar .report-count{
 }
 /*Tablet responsiveness*/
 @media screen and (max-width:1200px) {
+    .top-level-box{
+        width: 97%;
+        grid-template-columns: 1fr;
+    }
     /*Top left profile*/
     .aside-right .top{
         position: fixed;
@@ -361,10 +393,6 @@ aside .sidebar .report-count{
     }
     aside{
         position: fixed;
-    }
-    .top-level-box{
-        width: 97%;
-        grid-template-columns: 1fr;
     }
     main{
         margin-left: 8rem;

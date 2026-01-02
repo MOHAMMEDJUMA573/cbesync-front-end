@@ -1,15 +1,5 @@
 /*main part*/
-main{
-    margin-top: 1.5rem;
-}
-main h1{
-    margin-bottom: 2rem;
-}
-.main-grid{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} 
+ 
 /*Media Queries*/
 @media screen and (max-width:1200px) {
     

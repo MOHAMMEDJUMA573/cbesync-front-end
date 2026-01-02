@@ -1,22 +1,10 @@
-/*main part*/
-main{
-    margin-top: 1.5rem;
-}
-main h1{
-    margin-bottom: 2rem;
-}
-.main-grid{
-    display: flex;
-    flex-direction: column;
-} 
+/*custom page for table fit*/
 .grid-fieldset{
-    border: 1px solid var(--color-success);
     border-radius: var(--card-border-radius);
     margin-bottom: 1rem;
 }
-.grid-fieldset-legends{
+.grid-fieldset-legend{
     font-weight: bold;
-    text-align: center;
 }
 .class-grid{
     display: grid;
@@ -47,14 +35,18 @@ main h1{
 }
 /*Media Queries*/
 @media screen and (max-width:1200px) {
-    .main-grid{
-        margin-top: 3rem;
-    }
     .class-grid{
         grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width:768px) {
+    main{
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+    .aside-right .top{
+        top: 0;
+    }
     /*the last third  division*/
     .grid-part{
         grid-template-columns: repeat(1, 1fr);
