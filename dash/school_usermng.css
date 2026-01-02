@@ -40,25 +40,7 @@
     }
 }
 @media screen and (max-width:768px) {
-    .top-level-box{
-        width: 100%;
-    }
-    main{
-        margin-left: 0;
-        margin-top: 3rem;
-    }
-    .aside-right .top{
-        top: 0;
-    }
-    .aside-right .top button{
-        display: inline-block;
-    }
-    .aside-right .top button span{
-        font-size: 2rem;
-    }
     .grid-part{
         grid-template-columns: repeat(1, 1fr);
     }
-
-
 }

@@ -40,13 +40,6 @@
     }
 }
 @media screen and (max-width:768px) {
-    main{
-        margin-left: 0;
-        margin-top: 3rem;
-    }
-    .aside-right .top{
-        top: 0;
-    }
     /*the last third  division*/
     .grid-part{
         grid-template-columns: repeat(1, 1fr);

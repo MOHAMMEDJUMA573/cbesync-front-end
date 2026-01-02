@@ -65,13 +65,6 @@
     }
 }
 @media screen and (max-width:795px) {
-    main{
-        margin-left: 0;
-        margin-top: 3rem;
-    }
-    .aside-right .top{
-        top: 0;
-    }
     .main-grid-part{
         grid-template-columns: 1fr;
     }

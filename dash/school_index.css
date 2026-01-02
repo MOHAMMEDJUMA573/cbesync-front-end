@@ -1,4 +1,7 @@
 /*custom styles for the school_page*/
+main {
+    margin-left: 15rem;
+}
 main .school-data{
     margin-top: 5rem ;
     display: grid;
@@ -107,6 +110,9 @@ main .recent-activities a{
 }
 /*Media Queries*/
 @media screen and (max-width:1200px) {
+    main{
+        margin-left: 8rem;
+    }
     main .school-data{
         grid-template-columns: 1fr;
         margin-top: 3rem;
@@ -136,7 +142,6 @@ main .recent-activities a{
     
 }
 @media screen and (max-width:768px) {
-    
     main{
         margin-top: 5rem;
     }
