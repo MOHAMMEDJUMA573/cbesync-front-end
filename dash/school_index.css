@@ -144,6 +144,7 @@ main .recent-activities a{
 @media screen and (max-width:768px) {
     main{
         margin-top: 5rem;
+        margin-left: 0;
     }
     main .school-data{
         margin-top: -1rem;
