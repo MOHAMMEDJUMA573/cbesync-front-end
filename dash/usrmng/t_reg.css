@@ -24,7 +24,11 @@
 }
 .form-guide-text{
     display: flex;
+    flex-direction: column;
     flex: 1;
+}
+.error-message{
+    color: var(--color-warning);
 }
 .form-body{
     display: grid;
@@ -39,6 +43,7 @@
     margin: 0.4rem;
     padding: 0.5rem;
     appearance: auto;
+    overflow: hidden;
 }
 .form-field1 > label{
     display: block;
@@ -49,11 +54,11 @@
     color: var(--color-cbesync-p1);
 }
 
-input[type="text"], input[type="email"],input[type="date"], select, input[type="number"]{
+input[type="text"], input[type="email"],input[type="date"], select, input[type="number"],textarea{
     display: flex;
     flex: 1;
     border: none;
-    background: #f1f1f1;
+    background: #e3e3e3;
     padding: 0.5rem;
     font-size: 1rem;
     font-weight: 600;

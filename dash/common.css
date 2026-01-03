@@ -468,6 +468,9 @@ main h1{
         margin-top: 3rem;
         padding: 1rem;
     }
+    .main-grid{
+        margin-left: 0;
+    }
     .aside-right .top{
         position: fixed;
         top: 0;

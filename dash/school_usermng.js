@@ -1,4 +1,8 @@
-const teacherRegButton = document.getElementById("teacherReg")
+const teacherRegButton = document.getElementById("teacherReg");
 teacherRegButton.addEventListener("click", ()=> {
-    window.location.href = "usrmng/t_reg.html"
+    window.location.href = "usrmng/t_reg.html";
+})
+const studentRegButton = document.getElementById("studentReg");
+studentRegButton.addEventListener("click", ()=>{
+    window.location.href = "usrmng/s_reg.html";
 })
