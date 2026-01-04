@@ -24,5 +24,9 @@ studentEnroll.addEventListener("click", ()=>{
 })
 const parentEnrollButton = document.getElementById("parentEnroll");
 parentEnrollButton.addEventListener("click", ()=>{
-    window.location.href = "usrmng/p_enroll.html"
+    window.location.href = "usrmng/p_enroll.html";
+})
+const ntstaffEnroll = document.getElementById("ntstaffEnroll");
+ntstaffEnroll.addEventListener("click", ()=>{
+    window.location.href = "usrmng/nt_enroll.html";
 })
