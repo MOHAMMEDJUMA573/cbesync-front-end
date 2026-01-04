@@ -8,9 +8,17 @@ studentRegButton.addEventListener("click", ()=>{
 })
 const parentRegButton = document.getElementById("parentReg");
 parentRegButton.addEventListener("click", ()=>{
-    window.location.href = "usrmng/p_reg.html"
+    window.location.href = "usrmng/p_reg.html";
 })
 const ntstaffRegButton = document.getElementById("ntstaffReg");
 ntstaffRegButton.addEventListener("click", ()=>{
-    window.location.href = "usrmng/nt_reg.html"
+    window.location.href = "usrmng/nt_reg.html";
+})
+const teacherEnrollButton = document.getElementById("teacherEnroll");
+teacherEnrollButton.addEventListener("click", ()=>{
+    window.location.href = "usrmng/t_enroll.html";
+})
+const studentEnroll = document.getElementById("studentEnroll");
+studentEnroll.addEventListener("click", ()=>{
+    window.location.href = "usrmng/s_enroll.html";
 })
