@@ -22,3 +22,7 @@ const studentEnroll = document.getElementById("studentEnroll");
 studentEnroll.addEventListener("click", ()=>{
     window.location.href = "usrmng/s_enroll.html";
 })
+const parentEnrollButton = document.getElementById("parentEnroll");
+parentEnrollButton.addEventListener("click", ()=>{
+    window.location.href = "usrmng/p_enroll.html"
+})
