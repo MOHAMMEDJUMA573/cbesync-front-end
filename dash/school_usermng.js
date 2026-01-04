@@ -30,3 +30,19 @@ const ntstaffEnroll = document.getElementById("ntstaffEnroll");
 ntstaffEnroll.addEventListener("click", ()=>{
     window.location.href = "usrmng/nt_enroll.html";
 })
+const teacherMngButton = document.getElementById("teacherMng");
+teacherMngButton.addEventListener("click", ()=>{
+    window.location.href = "usrmng/t_manage.html";
+})
+const studentMngButton = document.getElementById("studentMng");
+studentMngButton.addEventListener("click", ()=>{
+    window.location.href = "usrmng/s_manage.html";
+})
+const ntstaffMngButton = document.getElementById("ntstaffMng");
+ntstaffMngButton.addEventListener("click", ()=>{
+    window.location.href = "usrmng/nt_manage.html";
+})
+const parentMngButton = document.getElementById("parentMng");
+parentMngButton.addEventListener("click", ()=>{
+    window.location.href = "usrmng/p_manage.html"
+})
