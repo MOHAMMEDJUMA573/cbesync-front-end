@@ -1,4 +1,8 @@
 /*custom page for table fit*/
+.top-level-box{
+    width: 97%;
+    grid-template-columns: 1fr;
+}
 .main-g-fieldset{
     border-radius: var(--card-border-radius);
     margin-bottom: 1rem;
@@ -18,7 +22,7 @@
     text-align: center;
     justify-content: space-between;
     padding: var(--card-padding);
-    background: var(--color-white);
+    background: #002d00;
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
@@ -28,7 +32,6 @@
 }
 .subgrid-parts:hover{
     border: 1px solid blue;
-    font-size: 1.5rem;
 }
 .subgrid-parts-p1{
     display: flex;
@@ -39,6 +42,7 @@
     display: flex;
     font-weight: bold;
     text-align: left;
+    color: var(--color-success);
 }
 .subgrid-parts-p2{
     display: flex;
@@ -51,7 +55,10 @@
     background: var(--color-primary-variant);
     border-radius: var(--border-radius-1);
     margin-bottom: 0.5rem;
+}
+.subgrid-p2-parts:hover{
     cursor: pointer;
+    border: 1px solid blue;
 }
 /*Media Queries*/
 @media screen and (max-width:1200px) {
