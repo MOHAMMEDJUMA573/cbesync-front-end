@@ -178,6 +178,32 @@ main{
     border: 1px solid green;
     border-radius: 1rem;
 }
+
+.theme-toggle-btn{
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.5rem;
+    width: 4rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+.theme-toggle-btn span{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.theme-toggle-btn span.active{
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+
+}
 .main-buttons{
     display: flex;
     flex-direction: column;
