@@ -86,56 +86,44 @@
 						<div class="form-body">
 							<div class="form-field1">
 									<label for="f-name">First-Name: </label>
-									<input type="text" name="f-name" id="f-name" placeholder="first_name">
+									<input type="text" name="student_first_name" id="f-name" placeholder="first_name">
 							</div>
 							<div class="form-field1">
 									<label for="m-name">Middle-Name: </label>
-									<input type="text" name="m-name" id="m-name" placeholder="middle_name">
+									<input type="text" name="student_middle_name" id="m-name" placeholder="middle_name">
 							</div>
 							<div class="form-field1">
 									<label for="l-name">Last-Name: </label>
-									<input type="text" name="l-name" id="l-name" placeholder="last_name">
+									<input type="text" name="student_last_name" id="l-name" placeholder="last_name">
 							</div>
 							<div class="form-field1">
 									<label for="gender">Gender: </label>
 									<div>
 										<label for="male">M: </label>
-										<input type="radio" id="male" value="MALE" name="gender">
+										<input type="radio" id="male" value="M" name="student_gender">
 										<label for="female">F: </label>
-										<input type="radio" id="female" value="FEMALE" name="gender">
+										<input type="radio" id="female" value="F" name="student_gender">
 									</div>
 							</div>
 							<div class="form-field1">
 									<label for="dob">Date of Birth: </label>
-									<input type="date" name="dob" id="dob">
-							</div>
-							<div class="form-field1">
-									<label for="phone">Phone Number: </label>
-									<input type="text" name="phone" id="phone" placeholder="e.g 254-72345678" minlength="13" maxlength="13" list="defaultTels" pattern="[0-9]{3}-[0-9]{9}">
-									<datalist id="defaultTels">
-											<option value="254-12345678"></option>
-											<option value="254-72345678"></option>
-									</datalist>
+									<input type="date" name="student_dob" id="dob">
 							</div>
 							<div class="form-field1">
 									<label for="e-contact">Emergency Contact: </label>
-									<input type="text" name="e-contact" id="e-contact" placeholder="e.g 254-72345678" minlength="13" maxlength="13" list="defaultTels" pattern="[0-9]{3}-[0-9]{9}">
-									<datalist id="defaultTels">
-											<option value="254-12345678"></option>
-											<option value="254-72345678"></option>
-									</datalist>
+									<input type="text" name="student_e_contact" id="e-contact" placeholder="e.g +25472345678" minlength="9" maxlength="15">
 							</div>
 							<div class="form-field1">
 									<label for="email">Email: </label>
-									<input type="email" name="email" id="email" placeholder="e.g moh@cbesyn.com">
+									<input type="email" name="student_email" id="email" placeholder="e.g moh@cbesyn.com">
 							</div>
 							<div class="form-field1">
 									<label for="h-address">Home address: </label>
-									<input type="text" name="h-address" id="h-address" placeholder="e.g Maweni-Likoni">
+									<input type="text" name="student_home_address" id="h-address" placeholder="e.g Maweni-Likoni">
 							</div>
 							<div class="form-field1">
 									<label for="adm-number">Admission Number: </label>
-									<input type="text" name="adm-number" id="adm-number" placeholder="e.g 10554">
+									<input type="text" name="student_admission_number" id="adm-number" placeholder="e.g 10554">
 							</div>
 							<div class="form-field1">
 									<label for="std-class">Student class: </label>
@@ -149,27 +137,27 @@
 							</div>
 							<div class="form-field1">
 									<label for="nationality">Nationality</label>
-									<select name="nationality" id="nationality">
-											<option value="kenyan">Kenyan</option>
-											<option value="alien">Alien</option>
+									<select name="student_country" id="nationality">
+											<option value="kenya">Kenyan</option>
+											<option value="other">Alien</option>
 									</select>
 							</div>
 							<div class="form-field1">
 									<label for="doa">Date of Admission </label>
-									<input type="date" name="doa" id="doa">
+									<input type="date" name="student_admission_date" id="doa">
 							</div>
 							<div class="form-field1">
 									<label for="sp-needs">Special Needs: </label>
 									<div>
 										<label for="yes">Yes: </label>
-										<input type="radio" id="yes" value="1" name="sp-needs">
+										<input type="radio" id="yes" value="1" name="student_s_needs">
 										<label for="no">No: </label>
-										<input type="radio" id="no" value="0" name="sp-needs">
+										<input type="radio" id="no" value="0" name="student_s_needs">
 									</div>
 							</div>
 							<div class="form-field1">
 									<label for="blood-group">Blood-group: </label>
-									<select name="blood-group" id="blood-group">
+									<select name="student_blood_group" id="blood-group">
 											<option value="A">A</option>
 											<option value="B">B</option>
 											<option value="AB">AB</option>
@@ -178,36 +166,32 @@
 							</div>
 							<div class="form-field1">
 									<label for="e-notes">Emergency Notes</label>
-									<textarea name="e-notes" id="e-notes" rows="3" cols="5"></textarea> 
+									<textarea name="student_e_notes" id="e-notes" rows="3" cols="5"></textarea> 
 							</div>
 							<div class="form-field1">
 									<label for="std-allergies[]">Allergies:</label>
 									<div style="display: grid; grid-template-columns: repeat(2, 1fr);">
 										<div>
-											<input type="checkbox" id="environment" name="std-allergies[]" value="environment">
+											<input type="checkbox" id="environment" name="student_allergies[]" value="environment">
 											<label for="environment">Environment</label><br> 
 										</div>
 										<div>
-											<input type="checkbox" id="food" name="std-allergies[]" value="food">
+											<input type="checkbox" id="food" name="student_allergies[]" value="food">
 											<label for="food">Food </label><br>
 										</div>
 										<div>
-											<input type="checkbox" id="latex" name="std-allergies[]" value="latex">
+											<input type="checkbox" id="latex" name="student_allergies[]" value="latex">
 											<label for="latex">Latex </label><br> 
 										</div>
 										<div>
-											<input type="checkbox" id="insects" name="std-allergies[]" value="insects">
+											<input type="checkbox" id="insects" name="student_allergies[]" value="insects">
 											<label for="insects">Insects</label><br> 
 										</div>										
 									</div>
 							</div> 
 							<div class="form-field1">
 									<label for="avatar">Upload a passport photo:</label>
-									<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
-							</div>
-							<div class="form-field1">
-								<label for="sform">Upload signed form:</label>
-								<input type="file" id="sform" name="sform" accept="image/png, image/jpeg" />
+									<input type="file" id="avatar" name="student_pic" accept="image/png, image/jpeg" />
 							</div>
 							<div class="opt-buttons">
 								<button type="submit">Submit</button> 
