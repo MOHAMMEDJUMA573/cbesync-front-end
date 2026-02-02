@@ -14,12 +14,7 @@
     margin-top: 3rem;
 }
 aside .sidebar a:last-child{
-    position: absolute;
     margin-top: 2rem;
-    width: auto;
-}
-aside{
-    position: fixed;
 }
 .top-level-box{
     width: 97%;
@@ -41,10 +36,6 @@ aside{
     display: none;
 }
 /*main part*/
-main{
-    margin-top: 1.5rem;
-    margin-left: 14rem;
-}
 main h1{
     margin-bottom: 2rem;
 }
@@ -124,6 +115,10 @@ button{
 /*added for the search results*/
 .search-results{
     color: #6d6dff;
+}
+.errorlist{
+    font-weight: normal;
+    color: var(--color-warning);
 }
 .maingtr-data{
     display: flex;
