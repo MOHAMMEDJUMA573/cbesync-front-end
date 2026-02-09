@@ -212,6 +212,11 @@ aside .sidebar a.active span{
     color: var(--color-primary);
     margin-left: calc(1rem - 0.2rem);
 }
+aside .sidebar2 a.active span{
+    margin-left: 0;
+    color: var(--color-primary);
+    margin-right: calc(1rem - 0.2rem);
+}
 aside .sidebar a:hover{
     color: var(--color-primary);
 }
@@ -239,6 +244,7 @@ main h1{
     margin-bottom: 2rem;
 }
 .land-inc-logo{
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     background: var(--color-background);
@@ -246,11 +252,16 @@ main h1{
 .main-logo{
     display: flex;
     border-radius: 1rem;
+    object-fit: cover;
+    object-position: left;
+    height: 40%;
+    width: 30%;
 }
 .main-capture-text{
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     font-weight: 600;
     text-align: center;
+    margin-top: 12rem;
     margin-bottom: 2rem;
 }
 .sub-capture-text{
@@ -258,6 +269,40 @@ main h1{
     line-height: 1.7rem;
     text-align: center;
     padding: 0.5rem;
+}
+.landing-buttons{
+    margin-top: 8px;
+    margin-right: 8px;
+    height: 50px;
+    background-color: var(--color-cbesync-p1);
+    color: white;
+    font-weight: bold;
+    border: white;
+    width: 105px;
+    border-radius: 10px;
+}
+.copyright-div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.copyright-div hr{
+    border: 1px solid var(--color-white);
+}
+.contact-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact-card-p{
+    text-align: left;
+}
+.cp-image{
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+.cp-inc-text{
+    margin-bottom: 1rem;
 }
 /*Right section*/
 .aside-right{
@@ -424,7 +469,7 @@ main h1{
         width: 100%;
         margin: 0;
         z-index: 2;
-        box-shadow: 0 1rem 1rem var(--color-light);
+        box-shadow: 0 1rem 1rem rgba(60, 85, 58, 0.4);
     }
     .aside-right{
         width: 94%;
