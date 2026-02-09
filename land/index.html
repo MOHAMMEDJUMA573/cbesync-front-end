@@ -3,58 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard-MNG</title>
+    <title>Dash-Students</title>
     <!--Box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="common.css">
 		<!--Google font icons-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
+  <div class="top-level-box">
+		<!--Side bar menu-->
+		<aside class="sidebar-menu">
+				<div class="top">
+					<div class="logo">
+						<img src="../dash/images/logo.png">
+						<h2><span class="logop1">Cbe</span><span class="logop2">Sync</span> </h2>
+					</div>
+					<div class="close" id="close-btn">
+						<span class="material-symbols-outlined">cancel_presentation</span>
+					</div>
+				</div>
+				<div class="sidebar">
+					<a href="#" class="active">
+						<span class="material-symbols-outlined">dashboard</span>
+						<h3>Home</h3>
+					</a>
+					<a href="#">
+						<span class="material-symbols-outlined">cast_for_education</span>
+						<h3>About</h3>
+					</a>
+				</div>
+		</aside> 
+		<!--Side bar menu-->
+		<aside class="sidebar-menu sidebar-menu2">
+				<div class="top">
+					<!-- <div class="logo">
+						<img src="../dash/images/logo.png">
+						<h2>
+							<div class="theme-toggle-btn">
+								<span class="material-symbols-outlined active">light_mode</span>
+								<span class="material-symbols-outlined">dark_mode</span>
+							</div>
+						</h2>
+					</div> -->
+					<div class="close" id="close-btn">
+						<span class="material-symbols-outlined">cancel_presentation</span>
+					</div>
+				</div>
+				<div class="sidebar">
+					<a href="#">
+						<span class="material-symbols-outlined">groups_3</span>
+						<h3>Services</h3>
+					</a>
+					<a href="#">
+						<span class="material-symbols-outlined">cast_for_education</span>
+						<h3>Pricing</h3>
+					</a>
+				</div>
+		</aside> 
 	<!--main body-->
 	<main>
-        <div class="top-level-grid">
-            <div class="subtop-grid">
-                <div class="inc-name">
-					<h2><span class="logop1">Cbe</span><span class="logop2">Sync</span> </h2>
-                </div>
-				<div class="inc-line">
-					“Anyone who tries to make everyone happy is admirable”---CbeSync
-				</div>
-				<div class="inc-line">
-					“That which he is I know not, But that which is not I know”
-				</div>
-                <div class="inc-logo">
-                    <img class="main-image" src="../dash/images/logo.png" alt="">
-                </div>
-            </div>
-            <div class="subtop-grid">
-				<div class="main-role">
-					Syncing
-				</div>
-				<div style="display: flex;">
-					<div style="flex: 1;">
-						<div class="theme-toggle-btn">
-							<span class="material-symbols-outlined">light_mode</span>
-							<span class="material-symbols-outlined active">dark_mode</span>
-						</div>
-					</div>
-					<div class="main-buttons">
-						<div class="main-b-divs">
-							Login
-						</div>
-						<div class="main-b-divs">
-							Sign up
-						</div>
-						<div class="main-b-divs">
-							Patner
-						</div>
-					</div>
-				</div>
+		<!--Main page data-->
+		<div class="first-page">
+			<div class="land-inc-logo">
+				<img src="../dash/images/logocut.png" class="main-logo" alt="">
 			</div>
-        </div>
+			<div class="main-capture-text">
+				Ultimate CBE Information System 
+			</div>
+			<div class="sub-capture-text">
+				Seamlessly connecting educators, students, parents, and administrators — all in one unified CBE-ready platform. 
+			</div>
+			<div class="action-capture-buttons">
+				<button>Sign Up</button>
+				<button>Login </button>
+			</div>
+		</div>
 	</main>
-  </div>
+	<!--The 3rd section of the page-->
+	<div class="aside-right">
+		<!--Part one third row-->
+		<div class="top top2">
+			<button id="menu-btn">
+				<span class="material-symbols-outlined">menu</span>
+			</button>
+			<div class="theme-toggle-btn">
+				<span class="material-symbols-outlined active">light_mode</span>
+				<span class="material-symbols-outlined">dark_mode</span>
+			</div>
+		</div>
+	</div>
+  </div> 
+
   <script src="index.js"></script>
 </body>
 </html>
