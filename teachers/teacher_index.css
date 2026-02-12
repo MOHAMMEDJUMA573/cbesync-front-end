@@ -12,7 +12,7 @@ main .main-t-page{
     padding: 1rem;
     padding-left: 0;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr;
     gap: 1rem;
 }
 main .main-t-p{
