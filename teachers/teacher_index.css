@@ -18,17 +18,14 @@ main .main-t-page{
 main .main-t-p{
     padding: 1rem;
     border-radius: 0.5rem;
-    background: rgb(103, 66, 66);
-}
-main .main-t-p:first-child{
-    background: rgb(103, 66, 66);
 }
 .teacher-p-pic{
     display: flex;
 }
 .teacher-p-image{
+    max-height:19rem;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     border-radius: 1rem;
 }
 .teacher-p-data{
