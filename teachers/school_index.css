@@ -8,7 +8,6 @@ main .teacher-data .teacher-rez{
 }
 main .main-t-page{
     margin-top: 4.2rem;
-    border: 1px solid green;
     border-left: none;
     padding: 1rem;
     padding-left: 0;
@@ -17,9 +16,12 @@ main .main-t-page{
     gap: 1rem;
 }
 main .main-t-p{
-    border: 1px solid saddlebrown;
     padding: 1rem;
     border-radius: 0.5rem;
+    background: rgb(103, 66, 66);
+}
+main .main-t-p:first-child{
+    background: rgb(103, 66, 66);
 }
 .teacher-p-pic{
     display: flex;
@@ -50,23 +52,83 @@ main .main-t-p{
     border: 1px solid var(--color-cbesync-p1);
     display: flex;
     flex: 1;
+    background: var(--color-white);
+}
+.bio-d-text{
+    display: flex;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    background: var(--color-cbesync-p1);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.employement-data{
+    display: flex;
+    flex-direction: column;
+}
+.main-p-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid green;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    background: var(--color-white);
+}
+.employement-d-data{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.employment-d-p{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.edp-title{
+    background: var(--color-white);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+.edp-value{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-cbesync-p1);
+    display: flex;
+    flex: 1;
+    background: var(--color-white);
 }
 /*Media Queries*/
 @media screen and (max-width:1200px) {
     main{
         margin-left: 8rem;
     }
-    main .teacher-data{
-        grid-template-columns: 1fr;
+    main .main-t-page{
+        display: flex;
+        flex-direction: column;
         margin-top: 3rem;
+        flex-direction: column-reverse;
     }    
+    .employement-d-data{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 @media screen and (max-width:768px) {
     main{
-        margin-top: 5rem;
+        margin-top: 0rem;
         margin-left: 0;
     }
     main .teacher-data{
         margin-top: -1rem;
+    }
+    main .main-t-page{
+        padding: 0;
     }
 }
