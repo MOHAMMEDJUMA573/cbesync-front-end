@@ -1,0 +1,72 @@
+/*custom styles for the school_page*/
+main {
+    margin-left: 15rem;
+}
+main .teacher-data .teacher-rez{
+    color: var(--color-dark);
+    font-weight: normal;
+}
+main .main-t-page{
+    margin-top: 4.2rem;
+    border: 1px solid green;
+    border-left: none;
+    padding: 1rem;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+main .main-t-p{
+    border: 1px solid saddlebrown;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.teacher-p-pic{
+    display: flex;
+}
+.teacher-p-image{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+.teacher-p-data{
+    display: flex;
+    flex-direction: column;
+}
+.teacher-pd-row{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.pd-title{
+    background: var(--color-white);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+.pd-value{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-cbesync-p1);
+    display: flex;
+    flex: 1;
+}
+/*Media Queries*/
+@media screen and (max-width:1200px) {
+    main{
+        margin-left: 8rem;
+    }
+    main .teacher-data{
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+    }    
+}
+@media screen and (max-width:768px) {
+    main{
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+    main .teacher-data{
+        margin-top: -1rem;
+    }
+}
