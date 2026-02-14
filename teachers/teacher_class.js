@@ -1,14 +1,11 @@
 function CreatePopUp(id){
-    let popNode = document.querySelector(id)
-    let overlay = popNode.querySelector(".overlay")
-    let closebtn = popNode.querySelector(".close-btn")
+    const popNode = document.querySelector(id)
+    const overlay = popNode.querySelector(".overlay")
     function openPopup(){
         popNode.classList.add("active");
-
     }
     function closePopup(){
         popNode.classList.remove("active");
-        
     }
     overlay.addEventListener("click", closePopup)
     return openPopup
@@ -16,3 +13,10 @@ function CreatePopUp(id){
 
 const studentPopup = CreatePopUp("#popup")
 document.querySelector("#studentsView").addEventListener("click", studentPopup)
+//link active toggle
+function T2(){
+    /*activate the classlist*/
+    document.querySelector(".sidebar a.active")?.classList.remove("active");
+    document.querySelectorAll(".sidebar a")[1].classList.add("active");
+}
+T2();
