@@ -105,6 +105,10 @@ main .class-data > button{
     display: grid;
     grid-template-columns: 1fr 1.5fr 2fr 0.5fr;
 }
+#subjectsPopup .maingt-header-row,#subjectsPopup .maingt-data-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
 .maingth-data {
     display: flex;
     font-weight: bold;
