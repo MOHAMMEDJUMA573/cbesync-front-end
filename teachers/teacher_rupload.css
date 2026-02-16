@@ -1,0 +1,18 @@
+/*custom styles for the school_page*/
+main {
+    margin-left: 15rem;
+}
+/*Media Queries*/
+@media screen and (max-width:1200px) {
+    main{
+        margin-left: 8rem;
+    }   
+    
+}
+@media screen and (max-width:768px) {
+    main{
+        margin-top: 0rem;
+        margin-left: 0;
+    }
+        
+}
