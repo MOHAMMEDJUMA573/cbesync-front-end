@@ -17,9 +17,8 @@
 .form-header{
     display: flex;
     margin-bottom: 1rem;
-    border: 1px solid green;
-    background-color: var(--color-white);
-    border-radius: 1rem;
+    background-color: var(--color-headers-bg);
+    border-radius: var(--allround-bradius);
     padding: 1rem;
 }
 .form-guide-text{
@@ -27,15 +26,18 @@
     flex-direction: column;
     flex: 1;
 }
+.form-guide-text p{
+    color: var(--color-black);
+    font-weight: bold;
+}
 .error-message{
     color: var(--color-warning);
 }
 .form-body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid green;
     background-color: var(--color-white);
-    border-radius: 1rem;
+    border-radius: var(--allround-bradius);
 }
 .form-field1{
     display: flex;
@@ -54,7 +56,7 @@
     color: var(--color-cbesync-p1);
 }
 
-input[type="text"], input[type="email"],input[type="date"], select, input[type="number"], textarea{
+input[type="text"], input[type="email"],input[type="date"], select, input[type="number"], input[type="tel"], textarea{
     display: flex;
     flex: 1;
     border: none;
@@ -66,8 +68,13 @@ input[type="text"], input[type="email"],input[type="date"], select, input[type="
     color: darkblue;
     max-width: 30ch;
 }
+.errorlist{
+    font-weight: normal;
+    color: var(--color-warning);
+}
 .opt-buttons{
     display: flex;
+    align-items: center;
 }
 .opt-buttons > button{
     display: flex;

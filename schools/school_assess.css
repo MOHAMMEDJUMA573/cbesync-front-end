@@ -20,9 +20,9 @@
 .form-header{
     display: flex;
     margin-bottom: 1rem;
-    border: 1px solid green;
     background-color: var(--color-white);
-    border-radius: 1rem;
+    background-color: var(--color-headers-bg);
+    border-radius: var(--allround-bradius);
     padding: 1rem;
 }
 .form-guide-text{
@@ -35,12 +35,15 @@
 .error-message{
     color: var(--color-warning);
 }
+.form-guide-text p{
+    color: var(--color-black);
+    font-weight: bold;
+}
 .form-body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border: 1px solid green;
     background-color: var(--color-white);
-    border-radius: 1rem;
+    border-radius: var(--allround-bradius);
 }
 .form-body1{
     grid-template-columns: repeat(4, 1fr);
